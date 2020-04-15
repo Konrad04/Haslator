@@ -6,27 +6,27 @@ function weryfikacja() {
 
 
     if (passy.value.length < 1) {
-        document.getElementById("komunikat").innerHTML = "Pole nie mo¿e byæ puste";
+        document.getElementById("komunikat").innerHTML = "Pole nie moÅ¼e byÄ‡ puste";
         komunikat.style.color = "red";
         return false;
     }
 
 
     else if (passy.value.match(idealne)) {
-        document.getElementById("komunikat").innerHTML = "Dobre has³o";
+        document.getElementById("komunikat").innerHTML = "Dobre hasÅ‚o";
         komunikat.style.color = "green";
         return false;
     }
 
 
     else if (passy.value.match(mierne)) {
-        document.getElementById("komunikat").innerHTML = "Œrednie has³o";
+        document.getElementById("komunikat").innerHTML = "Åšrednie hasÅ‚o";
         komunikat.style.color = "blue";
         return false;
     }
 
     else {
-        document.getElementById("komunikat").innerHTML = "S³abe has³o";
+        document.getElementById("komunikat").innerHTML = "SÅ‚abe hasÅ‚o";
         komunikat.style.color = "yellow";
         return false;
     }
